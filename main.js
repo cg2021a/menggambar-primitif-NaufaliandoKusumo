@@ -17,9 +17,11 @@ function main(){
       */
      var vertices = [
          -0.5, -0.5,   //titik A
-         -0.5, 0.5,  //titik B
+         -0.1, 0.5,  //titik B
          0.3, -0.5,  
-         0.3, 0.5
+         -0.65, 0.18,
+         0.45, 0.18,
+         -0.5, -0.5
      ];
  
      var positionBuffer = gl.createBuffer();
@@ -69,5 +71,5 @@ function main(){
      gl.clearColor(1.0, 1.0, 1.0, 1.0);
      gl.clear(gl.COLOR_BUFFER_BIT);
  
-     gl.drawArrays(gl.LINE_STRIP, 0, 4);
+     gl.drawArrays(gl.LINE_STRIP, 0, 6);
  }
